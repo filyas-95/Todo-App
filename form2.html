@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script> 
+// var info = 0;
+// // var info1 = 0;
+// var get="";
+// var array = Array();
+// var task = "<hr/>";   
+
+var array=Array();
+function addval()
+{
+
+//  array[info] = document.getElementById("name").value;
+
+
+ 
+//  array[info1] = document.getElementById("fname").value;
+
+
+//  alert("Element: " + array[info]  + "Added "  );
+
+//  document.getElementById("fname").value = "";
+
+
+var get_val = document.getElementById("name").value;
+
+if (get_val == ""){
+
+document.getElementById("field").innerHTML="enter task";
+}
+else{
+            var ob={
+                name:get_val
+                };
+                array.push(ob);
+}
+
+for(let i=0; i<array.length; i++)
+{
+    let d = document.getElementById("Show").innerHTML;
+    d= `"${array[i].name}"`;
+}
+}
+// }/]
+//     for (var i=0; i<array.length; i++)
+//     {
+//       task += "Task : " + i + " = " + array[i] + "<br/>";
+      
+
+
+
+
+//     }
+
+
+//     // localStorage.setItem("task",task);
+//         // document.getElementById("Show").innerHTML = "";
+
+// document.getElementById("Show").innerHTML = task;
+//  info++;
+//  document.getElementById("name").value = "";
+
+
+// function show(){
+
+//     document.getElementById("lisst").innerHTML= check;
+//     console.log(get);
+// }
+
+// function show()
+// {
+//    var task = "<hr/>";   
+    
+//    for (var i=0; i<array.length; i++)
+//    {
+//      task += "Task : " + i + " = " + array[i] + "<br/>";
+//    }
+//    document.getElementById("Show").innerHTML = task;
+// }
+</script>
+<meta charset=utf-8 />
+<title>Todo App</title>
+</head>
+<body>
+<input type="text" id="name"></input>
+<p id="field"></p>
+<!-- <input type="text" id="fname"></input> -->
+
+<input type="button" id="button1" value="ADD" onclick="addval();"></input>
+<input type="button" id="button2" value="Display" onclick="show()"></input>
+<div id="Show"></div> 
+<div id="lisst"></div>
+</body>
+</html>

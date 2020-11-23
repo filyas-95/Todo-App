@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+
+
+
+    
+<script type="text/javascript">  
+    function ValidatePetSelection()  
+    {  
+        var checkboxes = document.getElementsByName("check");  
+        // var numberOfCheckedItems = 0;  
+        for(var i = 0; i < checkboxes.length; i++)  
+        {  
+            if(checkboxes[i].checked)  
+                // numberOfCheckedItems++;  
+                alert(checkboxes[i].checked);
+
+                if(checkboxes[i].checked == true){
+                        alert("goood");
+                        break;
+
+                }
+        }  
+        
+    }  
+
+
+
+    
+function ValidatePetSelection()  
+{  
+    // alert("hello");
+    task = document.getElementsByName("checkin");  
+    // var numberOfCheckedItems = 0;  
+    for(var i = 0; i < task.length; i++)  
+    {  
+        if(task[i].checked)  
+            // numberOfCheckedItems++;  
+            alert(task[i].checked);
+
+            if(task[i].checked == true){
+                    alert(task);
+
+                    // myNode
+              
+                    break;
+
+            }
+
+            else{
+               return false;
+            }
+    }  
+    
+}
+
+
+    </script>
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" >  
+       
+        <input type="checkbox" name="check" value="Cats" onclick="return ValidatePetSelection();">Cats<br>  
+        
+       
+    </form>  
+    
+</body>
+</html>
